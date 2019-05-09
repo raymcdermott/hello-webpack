@@ -1,0 +1,10 @@
+{:main          hello-webpack.core
+ :output-to     "out/main.js"
+ :output-dir    "out"
+ :npm-deps      true
+ :infer-externs true
+ :pretty-print  true
+ :target        :node
+ :foreign-libs  [{:file           "dist/index_bundle.js"
+                  :provides       ["request"]
+                  :global-exports {request Request}}]}
